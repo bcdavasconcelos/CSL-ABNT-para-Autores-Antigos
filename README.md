@@ -91,7 +91,7 @@ Para corrigir isso, fiz algumas modificações de modo a trazer para a citação
   ```
 
 **Chave (ID) citada:** `@EN_Bywater`  
-**Como aparece a citação em linha:** `BYWATER, 1900`   
+**Como aparece a citação em linha:** `BYWATER 1900`   
 **Como aparece na bibliografia:** `ARISTÓTELES. Ethica Nicomachea (I. Bywater, Ed.). Oxford: Clarendon, 1890.`  
 
 
@@ -128,8 +128,8 @@ Para corrigir isso, fiz algumas modificações de modo a trazer para a citação
   }
 ```
 
-**Chave (ID) citada:** `@EN_Reeve, p.10`   
-**Como aparece a citação em linha:** `REEVE 2014, p. 10`  
+**Chave (ID) citada:** `@EN_Reeve` | Exemplo com número da página `@EN_Reeve, p.10`   
+**Como aparece a citação em linha:** `REEVE 2014` | `REEVE 2014, p.10`  
 **Como aparece na bibliografia:** `ARISTÓTELES. Nicomachean ethics. Tradução: C. D. C. Reeve. Indianápolis: Hackett, 2014.`
 
 
