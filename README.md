@@ -9,7 +9,7 @@
 Para corrigir isso, fiz algumas modificações de modo a trazer para a citação em linha a abreviação da obra, no caso da ed. Bekker; o nome do editor, no caso das edições críticas; e o nome do tradutor, no caso das traduções modernas. De modo a evitar interferência na formatação da bibliografia dos tipos tradicionais e mais comuns — como `book` e `journal article` — optei por re-aproveitar outros tipos menos utilizados e de pouca utilidade para os estudos clássicos, como `legislation` e `report`.
 
 
-| Tipo de referência | Citação em linha (antes) | Citação em linha (depois) | Tipo utilizado |
+| Tipo de referência | Em linha (ABNT tradicional) | Em linha (ABNT modificado) | Tipo utilizado |
 | ------------------ | ------------------------ | ------------------------- | -------------- |
 | Ed. Bekker         | Aristóteles 1834         | EN                        | chapter        |
 | Ed. Crítica        | Aristóteles 1900         | Bywater 1900              | legislation    |
