@@ -1,5 +1,9 @@
 # CSL ABNT para Autores Antigos
 
+Esse é um estilo que adaptei para facilitar a citação de textos antigos utilizando o filtro CITEPROC do Pandoc. 
+
+![Esq: fonte | Dir: versão renderizada](./img/biblio.png)
+
 - Para citar a ed. Bekker (ed. crítica de referência que contém a numeração a a partir da qual o texto de Aristóteles é citado), utilizo o tipo `chapter`.
 - Para citar as demais edições críticas, utilizo o tipo `legislation`.
 - Para citar traduções modernas, utilizo o tipo `report`.
@@ -9,7 +13,7 @@
 Para corrigir isso, fiz algumas modificações de modo a trazer para a citação em linha a abreviação da obra, no caso da ed. Bekker; o nome do editor, no caso das edições críticas; e o nome do tradutor, no caso das traduções modernas. De modo a evitar interferência na formatação da bibliografia dos tipos tradicionais e mais comuns — como `book` e `journal article` — optei por re-aproveitar outros tipos menos utilizados e de pouca utilidade para os estudos clássicos, como `legislation` e `report`.
 
 
-| Tipo de referência | Citação em linha (antes) | Citação em linha (depois) | Tipo utilizado |
+| Tipo de referência | Em linha (ABNT tradicional) | Em linha (ABNT modificado) | Tipo utilizado |
 | ------------------ | ------------------------ | ------------------------- | -------------- |
 | Ed. Bekker         | Aristóteles 1834         | EN                        | chapter        |
 | Ed. Crítica        | Aristóteles 1900         | Bywater 1900              | legislation    |
@@ -17,121 +21,30 @@ Para corrigir isso, fiz algumas modificações de modo a trazer para a citação
 
 
 ## Ed. crítica de referência (e.g. Bekker, Stephanus)
-**Justificativa:** Trazer a abreviação da obra para a citação em linha. Observação importante: a abreviação da obra deve estar contida no campo `annote`.  
-**Tipo utilizado:** `chapter`  
-**Exemplo de referência (em formato json):**  
-```json
-  {
-    "annote": "EN",
-    "author": [
-      {
-        "family": "Aristóteles"
-      }
-    ],
-    "container-title": "Aristotelis opera",
-    "editor": [
-      {
-        "family": "Bekker",
-        "given": "Immanuel"
-      }
-    ],
-    "id": "EN",
-    "issued": {
-      "date-parts": [
-        [
-          1831
-        ]
-      ]
-    },
-    "page": "1094a01-1181b23",
-    "publisher": "Reimer",
-    "publisher-place": "Berlim",
-    "title": "Ethica nicomachea",
-    "type": "chapter"
-  }
-```
+**Obj:** Trazer a abreviação da obra para a citação em linha.  
+**Obs.:** A abreviação da obra deve estar contida no campo `annote`.  
+**Tipo:** `chapter`  
 
-**Chave (ID) citada:** `@EN` | Exemplo com nr da pág: `@EN 1025b09`  
-**Como aparece a citação em linha:** `EN` | `EN 1025b09`  
-**Como aparece na bibliografia:** `ARISTÓTELES. “Ethica Nicomachea”. In: BEKKER, I. (Ed). Aristotelis Opera. Berlim: Reimer, 1831. (1094a01–1181b23).`   
-
+**Citekey:** `@EN` | Exemplo com nr da pág: `@EN 1025b09`  
+**Cit em linha:** `EN` | `EN 1025b09`  
+**Ref:** `ARISTÓTELES. “Ethica Nicomachea”. In: BEKKER, I. (Ed). Aristotelis Opera. Berlim: Reimer, 1831. (1094a01–1181b23).`   
 
 
 ## Demais edições críticas
-**Justificativa:** Trazer o nome do editor para a citação em linha.  
-**Tipo utilizado:** `report`  
-**Exemplo de referência (em formato json):**  
-```json
-  {
-    "author": [
-      {
-        "family": "Aristóteles"
-      }
-    ],
-    "editor": [
-      {
-        "family": "Bywater",
-        "given": "Ingram"
-      }
-    ],
-    "id": "EN_Bywater",
-    "issued": {
-      "date-parts": [
-        [
-          1890
-        ]
-      ]
-    },
-    "page": "1094a1-1181b23",
-    "publisher": "Clarendon",
-    "publisher-place": "Oxford",
-    "title": "Ethica nicomachea",
-    "type": "legislation"
-  }
-  ```
+**Obj:** Trazer o nome do editor para a citação em linha.  
+**Tipo:** `report`  
 
-**Chave (ID) citada:** `@EN_Bywater`  
-**Como aparece a citação em linha:** `BYWATER 1900`   
-**Como aparece na bibliografia:** `ARISTÓTELES. Ethica Nicomachea (I. Bywater, Ed.). Oxford: Clarendon, 1890.`  
-
+**Citekey:** `@EN_Bywater`  
+**Cit em linha:** `BYWATER 1900`   
+**Ref:** `ARISTÓTELES. Ethica Nicomachea (I. Bywater, Ed.). Oxford: Clarendon, 1890.`  
 
 ## Traduções modernas
+**Obj:** Trazer o nome do tradutor para a citação em linha.  
+**Tipo:** `report`  
 
-**Justificativa:** Trazer o nome do tradutor para a citação em linha.  
-**Tipo utilizado:** `report`  
-**Exemplo de referência (em formato json):**  
-```json
-  {
-    "author": [
-      {
-        "family": "Aristóteles"
-      }
-    ],
-    "id": "EN_Reeve",
-    "issued": {
-      "date-parts": [
-        [
-          2014
-        ]
-      ]
-    },
-    "publisher": "Hackett",
-    "publisher-place": "Indianápolis",
-    "title": "Nicomachean ethics",
-    "translator": [
-      {
-        "family": "Reeve",
-        "given": "C. D. C."
-      }
-    ],
-    "type": "report"
-  }
-```
-
-**Chave (ID) citada:** `@EN_Reeve` | Exemplo com número da página `@EN_Reeve, p.10`   
-**Como aparece a citação em linha:** `REEVE 2014` | `REEVE 2014, p.10`  
-**Como aparece na bibliografia:** `ARISTÓTELES. Nicomachean ethics. Tradução: C. D. C. Reeve. Indianápolis: Hackett, 2014.`
-
+**Citekey:** `@EN_Reeve` | Exemplo com número da página `@EN_Reeve, p.10`   
+**Cit em linha:** `REEVE 2014` | `REEVE 2014, p.10`  
+**Ref:** `ARISTÓTELES. Nicomachean ethics. Tradução: C. D. C. Reeve. Indianápolis: Hackett, 2014.`
 
 # Instruções
 
@@ -163,6 +76,96 @@ Acrescento, portanto:
 "--bibliography=$HOME/Dropbox/Scrivener/workflow-mmd/refs/All.json"
 ```
 
-# Zotero
+## Zotero
 
 Essa possibilidade **não foi testada**, mas, em princípio, esse arquivo CSL pode ser utilizado com o Zotero no Microsoft Word ou em algum outro processador de texto qualquer. 
+
+
+# Exemplo de referência (em formato json):
+
+```json
+  {
+    "annote": "EN",
+    "author": [
+      {
+        "family": "Aristóteles"
+      }
+    ],
+    "container-title": "Aristotelis opera",
+    "editor": [
+      {
+        "family": "Bekker",
+        "given": "Immanuel"
+      }
+    ],
+    "id": "EN",
+    "issued": {
+      "date-parts": [
+        [
+          1831
+        ]
+      ]
+    },
+    "page": "1094a01-1181b23",
+    "publisher": "Reimer",
+    "publisher-place": "Berlim",
+    "title": "Ethica nicomachea",
+    "type": "chapter"
+  }
+```
+
+```json
+  {
+    "author": [
+      {
+        "family": "Aristóteles"
+      }
+    ],
+    "editor": [
+      {
+        "family": "Bywater",
+        "given": "Ingram"
+      }
+    ],
+    "id": "EN_Bywater",
+    "issued": {
+      "date-parts": [
+        [
+          1890
+        ]
+      ]
+    },
+    "page": "1094a1-1181b23",
+    "publisher": "Clarendon",
+    "publisher-place": "Oxford",
+    "title": "Ethica nicomachea",
+    "type": "legislation"
+  }
+  ```
+```json
+  {
+    "author": [
+      {
+        "family": "Aristóteles"
+      }
+    ],
+    "id": "EN_Reeve",
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "publisher": "Hackett",
+    "publisher-place": "Indianápolis",
+    "title": "Nicomachean ethics",
+    "translator": [
+      {
+        "family": "Reeve",
+        "given": "C. D. C."
+      }
+    ],
+    "type": "report"
+  }
+```
