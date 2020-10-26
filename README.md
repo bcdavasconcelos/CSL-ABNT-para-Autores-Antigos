@@ -1,6 +1,7 @@
 # CSL ABNT para Autores Antigos
 
-Esse é um estilo que adaptei para facilitar a citação de textos antigos utilizando o filtro CITEPROC do Pandoc. 
+Esse é um estilo que adaptei para facilitar a citação de textos antigos utilizando o filtro CITEPROC do Pandoc. O arquivo do estilo pode ser baixado [nesse repositório do GitHub](https://github.com/bcdavasconcelos/CSL-ABNT-para-Autores-Antigos).
+
 
 ![Esq: fonte | Dir: versão renderizada](./img/biblio.png)
 
@@ -169,42 +170,3 @@ Essa possibilidade **não foi testada**, mas, em princípio, esse arquivo CSL po
     "type": "report"
   }
 ```
-
-**Chave (ID) citada:** `@EN_Reeve` | Exemplo com número da página `@EN_Reeve, p.10`   
-**Como aparece a citação em linha:** `REEVE 2014` | `REEVE 2014, p.10`  
-**Como aparece na bibliografia:** `ARISTÓTELES. Nicomachean ethics. Tradução: C. D. C. Reeve. Indianápolis: Hackett, 2014.`
-
-
-# Instruções
-
-O Pandoc, além de ser uma ferramenta extremamente útil (por acaso, criada e mantida por um professor de filosofia), tem uma excelente [documentação](https://pandoc.org/MANUAL.html). Por isso, eis apenas algumas direções sobre o arquivo CSL em particular:
-
-
-- Baixe o conteúdo deste repositório e adicione o estilo à pasta de estilos CSL do Pandoc ou a alguma outra pasta de sua preferência.
-- Ao comando de conversão do Pandoc, acrescente o comando `-C --csl=` e o endereço do arquivo CSL.  
-
-No meu caso, o arquivo está na seguinte localização:  
-
- `~/Dropbox/Scrivener/workflow-mmd/refs/ABNT.csl`
-
-Portanto, devo acrescentar:
-
-```bash
--C "--csl=$HOME/Dropbox/Scrivener/workflow-mmd/refs/ABNT.csl" 
-```
-
-- Não se esqueça, é claro, de acrescentar também o arquivo com a bibliografia (que pode estar em formato json ou BibTeX).
-
-Novamente, no meu caso, está na seguinte localização:
-
-`~/Dropbox/Scrivener/workflow-mmd/refs/All.json`
-
-Acrescento, portanto:
-
-```bash
-"--bibliography=$HOME/Dropbox/Scrivener/workflow-mmd/refs/All.json"
-```
-
-# Zotero
-
-Essa possibilidade **não foi testada**, mas, em princípio, esse arquivo CSL pode ser utilizado com o Zotero no Microsoft Word ou em algum outro processador de texto qualquer. 
