@@ -1,6 +1,6 @@
 # CSL ABNT para Autores Antigos
 
-Esse é um estilo que adaptei para facilitar a citação de textos antigos utilizando o filtro CITEPROC do Pandoc. O arquivo do estilo pode ser baixado [nesse repositório do GitHub](https://github.com/bcdavasconcelos/CSL-ABNT-para-Autores-Antigos).
+Esse é um estilo que adaptei para facilitar a citação de textos antigos utilizando o filtro CITEPROC do Pandoc. O arquivo do estilo pode ser baixado [aqui](https://github.com/bcdavasconcelos/CSL-ABNT-para-Autores-Antigos/blob/main/abnt.csl).
 
 
 ![Esq: fonte | Dir: versão renderizada](./img/biblio.png)
