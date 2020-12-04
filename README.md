@@ -1,3 +1,6 @@
+<p align="center"><a href="https://zenodo.org/badge/latestdoi/303481460"><img src="https://zenodo.org/badge/303481460.svg" alt="DOI"></a></p>
+
+
 # CSL ABNT para Autores Antigos
 
 Esse é um estilo que adaptei para facilitar a citação de textos antigos utilizando o filtro CITEPROC do Pandoc. O arquivo do estilo pode ser baixado [aqui](https://github.com/bcdavasconcelos/CSL-ABNT-para-Autores-Antigos/blob/main/abnt.csl).
