@@ -1,6 +1,6 @@
 # CSL ABNT para Autores Antigos
 
-![[DOI](zenodo.4305064.svg)](https://zenodo.org/badge/latestdoi/303481460)
+[![DOI](zenodo.4305064.svg)](https://zenodo.org/badge/latestdoi/303481460)
 
 Esse é um estilo que adaptei para facilitar a citação de textos antigos utilizando o filtro CITEPROC do Pandoc. O arquivo do estilo pode ser baixado [aqui](https://github.com/bcdavasconcelos/CSL-ABNT-para-Autores-Antigos/blob/main/abnt.csl).
 
