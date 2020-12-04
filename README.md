@@ -1,4 +1,6 @@
-<p align="center"><a href="https://zenodo.org/badge/latestdoi/303481460"><img src="https://zenodo.org/badge/303481460.svg" alt="DOI"></a></p>
+<p align="center">
+    <a href="https://zenodo.org/badge/latestdoi/303481460"><img src="https://zenodo.org/badge/303481460.svg" alt="DOI" /></a>
+</p>
 
 
 # CSL ABNT para Autores Antigos
