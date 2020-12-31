@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" demote-non-dropping-particle="never" default-locale="pt-BR">
+  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title>ABNT para Autores Antigos</title>
-    <title-short>ABNT</title-short>
-    <id>https://csl.mendeley.com/styles/597193711/ABNT-crazy</id>
+    <title>Associação Brasileira de Normas Técnicas para Estudos Clássicos (Portuguese - Brazil)</title>
+    <title-short>ABNT-Estudos_Antigos</title-short>
+    <id>http://www.zotero.org/styles/associacão-brasileira-de-normas-tecnicas-para-estudos-classicos</id>
     <link href="http://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas" rel="self"/>
+    <link href="http://www.zotero.org/styles/associacão-brasileira-de-normas-tecnicas-para-estudos-classicos" rel="self"/>
     <link href="https://forums.zotero.org/discussion/22148/how-to-apply-disambiguation-in-citation-just-when-works-of-different-authors-are-in-the-same-year/?Focus=147094#Comment_147094" rel="documentation"/>
     <author>
       <name>Juliana Geyna Régis</name>
@@ -36,14 +38,13 @@
       <email>gnumario [at-mark] gmail [dot-mark] com</email>
     </contributor>
     <contributor>
-      <name>Bernardo C.D.A. Vasconcelos</name>
+      <name>Bernardo Vasconcelos</name>
       <email>bernardovasconcelos@gmail.com</email>
-      <uri>https://github.com/bcdavasconcelos</uri>
     </contributor>
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <summary>The Brazilian Standard Style in accordance with ABNT-NBR 10520.2002 and ABNT-NBR 6023.2002</summary>
-    <updated>2020-09-08T18:31:38+00:00</updated>
+    <updated>2020-12-31T22:39:27+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="pt-BR">
@@ -78,11 +79,11 @@
     <choose>
       <if type="chapter">
         <names variable="container-author" delimiter=", ">
-          <name delimiter="; " and="symbol" initialize-with=". " name-as-sort-order="all">
+          <name name-as-sort-order="all" sort-separator=", " initialize-with=". " delimiter="; " delimiter-precedes-last="always">
             <name-part name="family" text-case="uppercase"/>
             <name-part name="given" text-case="uppercase"/>
           </name>
-          <label form="short" text-case="capitalize-first" prefix=" (" suffix=".)"/>
+          <label form="short" prefix=" (" suffix=".). " text-case="capitalize-first"/>
           <substitute>
             <names variable="editor"/>
             <names variable="collection-editor"/>
@@ -189,13 +190,13 @@
   <macro name="title">
     <choose>
       <if type="chapter bill" match="any">
-        <text variable="title" quotes="true"/>
+        <text variable="title"/>
       </if>
       <else-if type="book thesis" match="any">
         <text variable="title" font-weight="bold"/>
       </else-if>
       <else-if type="article-newspaper article-magazine article-journal" match="any">
-        <text variable="title" quotes="true"/>
+        <text variable="title"/>
       </else-if>
       <else>
         <choose>
@@ -389,7 +390,7 @@
       <key macro="author"/>
       <key variable="issued"/>
     </sort>
-    <layout delimiter="; ">
+    <layout prefix="(" suffix=")" delimiter="; ">
       <group>
         <text macro="author-short"/>
         <text macro="issued-year"/>
@@ -550,7 +551,7 @@
             <if match="any" variable="volume">
               <choose>
                 <if match="any" is-numeric="volume">
-                  <text variable="volume" prefix=" v. "/>
+                  <text variable="volume" prefix=" vol. "/>
                 </if>
                 <else>
                   <text variable="volume" font-weight="bold" prefix=" " suffix="."/>

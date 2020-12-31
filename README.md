@@ -57,24 +57,24 @@ O Pandoc, além de ser uma ferramenta extremamente útil (por acaso, criada e ma
 
 No meu caso, o arquivo está na seguinte localização:  
 
- `~/Dropbox/Scrivener/workflow-mmd/refs/ABNT.csl`
+ `~/Dropbox/Application Support/BBEdit/Pandoc/config/refs/ABNT.csl`
 
 Portanto, devo acrescentar:
 
 ```bash
--C "--csl=$HOME/Dropbox/Scrivener/workflow-mmd/refs/ABNT.csl" 
+-C "--csl=$HOME/Dropbox/Application Support/BBEdit/Pandoc/config/refs/ABNT.csl" 
 ```
 
 - Não se esqueça, é claro, de acrescentar também o arquivo com a bibliografia (que pode estar em formato json ou BibTeX).
 
 Novamente, no meu caso, está na seguinte localização:
 
-`~/Dropbox/Scrivener/workflow-mmd/refs/All.json`
+`~/Dropbox/Application Support/BBEdit/Pandoc/config/refs/All.json`
 
 Acrescento, portanto:
 
 ```bash
-"--bibliography=$HOME/Dropbox/Scrivener/workflow-mmd/refs/All.json"
+"--bibliography=$HOME/Dropbox/Application Support/BBEdit/Pandoc/config/refs/All.json"
 ```
 
 ## Zotero
