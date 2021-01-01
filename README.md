@@ -87,7 +87,8 @@ Essa possibilidade **não foi testada**, mas, em princípio, esse arquivo CSL po
 # Exemplo de referência (em formato json):
 
 ```json
-  {
+[
+ {
     "annote": "EN",
     "author": [
       {
@@ -114,10 +115,7 @@ Essa possibilidade **não foi testada**, mas, em princípio, esse arquivo CSL po
     "publisher-place": "Berlim",
     "title": "Ethica nicomachea",
     "type": "chapter"
-  }
-```
-
-```json
+  },
   {
     "author": [
       {
@@ -143,9 +141,7 @@ Essa possibilidade **não foi testada**, mas, em princípio, esse arquivo CSL po
     "publisher-place": "Oxford",
     "title": "Ethica nicomachea",
     "type": "legislation"
-  }
-  ```
-```json
+  },
   {
     "author": [
       {
@@ -171,4 +167,5 @@ Essa possibilidade **não foi testada**, mas, em princípio, esse arquivo CSL po
     ],
     "type": "report"
   }
+]
 ```
