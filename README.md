@@ -81,7 +81,7 @@ Acrescento, portanto:
 
 ## Zotero
 
-Essa possibilidade **não foi testada**, mas, em princípio, esse arquivo CSL pode ser utilizado com o Zotero no Microsoft Word ou em algum outro processador de texto qualquer. 
+Veja a pasta com instruções sobre o Zotero do repositório.
 
 
 # Exemplo de referência (em formato json):
