@@ -1,0 +1,84 @@
+[
+	{
+		"id": "http://zotero.org/users/local/2oyhoAF2/items/2VE23ML4",
+		"type": "report",
+		"event-place": "Indianápolis",
+		"publisher": "Hackett",
+		"publisher-place": "Indianápolis",
+		"title": "De Anima",
+		"author": [
+			{
+				"literal": "Aristóteles"
+			}
+		],
+		"translator": [
+			{
+				"family": "Reeve",
+				"given": "C. D. C."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/2oyhoAF2/items/8E7TXVIV",
+		"type": "paper-conference",
+		"abstract": "Metaphysica (0086.025)",
+		"event-place": "Oxford",
+		"publisher": "Clarendon Press",
+		"publisher-place": "Oxford",
+		"title": "Metaphysics",
+		"author": [
+			{
+				"literal": "Aristóteles"
+			}
+		],
+		"editor": [
+			{
+				"family": "Ross",
+				"given": "W. D."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1924"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/2oyhoAF2/items/9CZVMPAP",
+		"type": "chapter",
+		"container-title": "Aristotelis Opera",
+		"event-place": "Berlin",
+		"note": "VV",
+		"page": "1249a26-1251b37",
+		"publisher": "Reimer",
+		"publisher-place": "Berlin",
+		"title": "Περὶ Ἀρετῶν καὶ Κακιῶν",
+		"author": [
+			{
+				"literal": "Aristóteles"
+			}
+		],
+		"editor": [
+			{
+				"family": "Bekker",
+				"given": "Immanuel"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1831"
+				]
+			]
+		}
+	}
+]
