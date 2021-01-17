@@ -362,12 +362,6 @@
   <macro name="genre">
     <text variable="genre"/>
   </macro>
-  <macro name="citation-locator">
-    <group>
-      <label form="short"/>
-      <text variable="locator" prefix=" "/>
-    </group>
-  </macro>
   <macro name="place">
     <choose>
       <if match="any" variable="publisher-place">
@@ -389,7 +383,6 @@
       <group>
         <text macro="author-short"/>
         <text macro="issued-year"/>
-        <text prefix=", " macro="citation-locator"/>
       </group>
     </layout>
   </citation>
@@ -458,7 +451,7 @@
           <group>
             <text macro="author" suffix=". "/>
             <text macro="title" suffix=". "/>
-            <text macro="genre" suffix="—"/>
+            <text macro="genre" suffix="&#8212;"/>
             <text macro="publisher" suffix="."/>
           </group>
         </else-if>
