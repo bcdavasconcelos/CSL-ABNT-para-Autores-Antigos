@@ -1,3 +1,8 @@
+Esse repositório está arquivado. Veja [ABNT-Phi](https://github.com/bcdavasconcelos/ABNT-Phi) para a nova versão.
+
+---
+
+
 # CSL ABNT para Autores Antigos
 
 [![DOI](zenodo.4305064.svg)](https://zenodo.org/badge/latestdoi/303481460)
